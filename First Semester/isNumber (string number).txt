@@ -1,0 +1,15 @@
+bool isNumber(string number)
+{
+	bool isNumber = true;
+
+	for (size_t i = 0; i < number.size(); i++)
+	{
+		if (!isdigit(number[i]) && number[i] != '.' && number[0] != '-')
+		{
+			isNumber = false;
+			break;
+		}
+	}
+
+	return isNumber;
+}
